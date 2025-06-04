@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto de Química</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f7;
+            color: #333;
+        }
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0077cc;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0077cc;
+            color: white;
+            margin-top: 20px;
+        }
+  
+    .seccion {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin: 10px 0;
+      overflow: hidden;
+    }
+
+    .titulo {
+      background-color: #0077cc;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .flecha {
+      transition: transform 0.3s ease;
+    }
+
+    .contenido {
+      display: none;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .abierto .flecha {
+      transform: rotate(90deg);
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f9f9f9;
+      margin: 40px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .reaction {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 6px solid #3498db;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .reaction h2 {
+      color: #2980b9;
+    }
+    .equation {
+      font-family: monospace;
+      font-size: 18px;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Descripción General de la Química</h1>
+        <p>Estudiantes: Sherlin Sevillano <br> Alexander García <br> Carla Castillo</p>
+    </header>
+
+    <section>
+        <h2>¿Qué es la Química?</h2>
+        <img src="imagen.jpg" alt="Mi imagen" style="float: left; width: 150px; margin: 10px;">
+        <p>La química es una ciencia que tiene por finalidad no sólo descubrir, sino también, y sobre todo, crear, ya que es el arte de hacer compleja la materia. 
+        <br> Para captar la lógica de la reciente evolución de la química, hay que retroceder en el tiempo y dar un salto atrás de unos <b>cuatro mil millones de años.</b> <br><br>
+        La química desempeña un papel fundamental, tanto por el puesto que ocupa en las ciencias de la naturaleza y del conocimiento como por su importancia económica y su omnipresencia en nuestra vida diaria. <br> <br>A fuerza de estar presente por doquier se suele olvidar su existencia, e incluso corre el riesgo de pasar completamente desapercibida. <br> <br> Es una ciencia que no propende a ofrecerse en espectáculo, pero sin ella muchas proezas terapéuticas, hazañas espaciales y maravillas de la técnica, que todos consideramos espectaculares, no habrían visto la luz del día. <br> <br> La química contribuye de forma decisiva a satisfacer las necesidades de la humanidad en: <b>Alimentación, medicamentos, indumentaria, vivienda, energía, materias primas, transportes y comunicaciones.</b> También suministra materiales a la física y la industria, proporciona modelos y sustratos a la biología y la farmacología, y aporta propiedades y procedimientos a las ciencias y las técnicas en general.
+        </p>
+    </section>
+    
+    <section>
+      <div class="seccion">
+    <div class="titulo" onclick="toggleContenido(this)">
+      Ramas de la Química
+      <span class="flecha">▶</span>
+    </div>
+    <div class="contenido">
+      <p>La química se subdivide convencionalmente en seis ramas principales o subdisciplinas de la química:<br>
+      <ul>
+        <li><b>Química Inorgánica:</b> Se dedica al estudio de la materia desde el punto de vista de sus propiedades eléctricas, magnéticas y ópticas, tomando en cuenta la totalidad de los átomos de la tabla periódica, pero particularmente los que forman compuestos como ácidos, bases, sales e iones y también metales.</li> <br>
+        <li><b>Química Orgánica:</b> Se dedica al estudio de la materia orgánica, o sea, de aquella que tiene al carbono y al hidrógeno como elementos fundamentales, y que forman largas cadenas con propiedades únicas. Estos compuestos son, además, particularmente importantes para la química de los seres vivos.</li> <br>
+        <li><b>Bioquímica:</b> Se dedica al estudio de las sustancias que componen a los seres vivos, así como de las reacciones que tienen lugar dentro de ellos. Posee fronteras en común con la medicina, con la genética y con la neurología, entre otros campos del saber biológico.</li> <br>
+        <li><b>Química física o fisicoquímica:</b> Se dedica al estudio de las bases físicas de los procesos y fundamentos físicos, o sea, que estudia la materia desde un punto de vista a la vez físico y químico, como su nombre lo indica. Entre sus áreas de estudio principales figuran la termodinámica química, la cinética química, la electroquímica, la espectroscopía y otras especialidades que son resultado del cruce entre física y química.</li><br>
+        <li><b>Química Industrial:</b> Se dedica al estudio de los métodos de producción industrial de sustancias químicas, es decir, para producir sustancias químicas en grandes cantidades, y así comprender cómo estos métodos de producción pueden hacerse más eficientes, menos contaminantes y más rentables económicamente. Esta rama es particularmente útil para la investigación y elaboración de nuevos materiales.</li>
+      </ul>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function toggleContenido(elemento) {
+      const contenido = elemento.nextElementSibling;
+      const seccion = elemento.parentElement;
+      const abierto = contenido.style.display === "block";
+
+      contenido.style.display = abierto ? "none" : "block";
+      seccion.classList.toggle("abierto", !abierto);
+    }
+  </script>
+    </section>
+
+    <section>
+      <h2>La Tabla Periódica</h2>
+      <p>La tabla periódica es una herramienta fundamental en el estudio de la química, ya que organiza todos los elementos conocidos según sus propiedades y estructura atómica. En esta versión interactiva, puedes explorar cada elemento con solo hacer clic sobre él. Encontrarás información como su símbolo, número atómico, masa, estado de la materia, electronegatividad y mucho más.</p>
+      <iframe src="https://ptable.com" width="100%" height="600px" style="border:none;"></iframe>
+    </section>
+
+    <section>
+        <h2>Dato Importante sobre la Química: <br>
+        <hr>Alexander Fleming y el descubrimiento de la penicilina...</h2>
+        <p>La penicilina marcó el inicio de la era de los antibióticos, ya que antes no existía un tratamiento eficaz para muchas infecciones. Fue descubierta en 1928 por Alexander Fleming, quien al regresar de sus vacaciones observó que un moho, Penicillium notatum, inhibía el crecimiento de bacterias en una de sus placas de Petri.<br><br> Este "zumo de moho" resultó capaz de eliminar bacterias como los estreptococos y meningococos. Aunque el compuesto era inestable y difícil de purificar, Fleming y sus asistentes lograron obtener disoluciones que permitieron seguir investigando. Fleming publicó sus hallazgos en 1929, mencionando brevemente su posible uso terapéutico. <hr>
+        <b> <a href="https://www.acs.org/education/whatischemistry/landmarks/historia-quimica/descubrimiento-desarrollo-penicilina.html">Fuente</a></b></p>
+    </section>
+
+    <section>
+        <div class="seccion">
+    <div class="titulo" onclick="toggleContenido(this)">
+      Conceptos Básicos de la Química
+      <span class="flecha">▶</span>
+    </div>
+    <div class="contenido">
+      <p>
+        <ul>
+          <li> <b>Átomo:</b> Desde los tiempos de Rutherford, se han descubierto muchas partículas subatómicas.<br><br> Sin embargo para los químicos para describir el átomo son suficientes tres partículas: <b>ELECTRÓN, PROTÓN, NEUTRÓN.</b><br><br> Electrones: carga –1<br>Protones: carga +1 <br>Neutrones: carga 0 En principio, los átomos son eléctricamente neutros
+          <br><br><b>Número de electrones = número de protones</b><br><br></li>
+          <li><b>Mol:</b> El mol es la unidad básica de cantidad de sustancia en el Sistema Internacional de Unidades (SI). Representa una cantidad específica de entidades elementales, como átomos, moléculas o iones, que es igual al número de Avogadro (aproximadamente 6.022 x 10^23). </li><br>
+          <li><b>Fórmula empírica:</b>Es la relación más sencilla de números enteros entre los átomos que componen la molécula.</li><br>
+          <li><b>Fórmula Molecular:</b> Los números relativos de los átomos son los de la molécula real del compuesto.</li><br>
+          <li><b>Reacción química:</b> Proceso en el cual un conjunto de sustancias (reactivos) se transforma en otro conjunto de nuevas sustancias (productos).</li><br>
+          <li><b>Disolución:</b> Mezcla homogénea de dos o más sustancias.</li><br>
+          <li><b>Disolvente:</b> Componente que está presente en mayor cantidad y determina el estado de agregación en el que existe una disolución.</li><br>
+        </ul>
+        <hr>
+        <a href="https://www.uv.es/materomo/resources/tema0.pdf">PDF detallado de los conceptos básicos</a>
+      </p>
+    </div>
+
+  <script>
+    function toggleContenido(elemento) {
+      const contenido = elemento.nextElementSibling;
+      const seccion = elemento.parentElement;
+      const abierto = contenido.style.display === "block";
+
+      contenido.style.display = abierto ? "none" : "block";
+      seccion.classList.toggle("abierto", !abierto);
+    }
+  </script>
+
+    </section>
+
+    <section>
+      <h1>Ejemplos de Reacciones Químicas</h1>
+        <div class="reaction">
+    <h2>🔥 Combustión</h2>
+    <p><strong>Nombre:</strong> Combustión del metano</p>
+    <p class="equation">CH₄ + 2 O₂ → CO₂ + 2 H₂O</p>
+    <p><strong>Descripción:</strong> El metano reacciona con oxígeno y produce dióxido de carbono y agua, liberando energía.</p>
+  </div>
+
+  <div class="reaction">
+    <h2>🔄 Desplazamiento Simple</h2>
+    <p><strong>Nombre:</strong> Zinc con ácido clorhídrico</p>
+    <p class="equation">Zn + 2 HCl → ZnCl₂ + H₂</p>
+    <p><strong>Descripción:</strong> El zinc desplaza al hidrógeno del ácido clorhídrico formando cloruro de zinc y gas hidrógeno.</p>
+  </div>
+
+  <div class="reaction">
+    <h2>🔁 Desplazamiento Doble</h2>
+    <p><strong>Nombre:</strong> Cloruro de sodio con nitrato de plata</p>
+    <p class="equation">NaCl + AgNO₃ → NaNO₃ + AgCl⬇</p>
+    <p><strong>Descripción:</strong> Se intercambian los iones formando nitrato de sodio y un precipitado de cloruro de plata.</p>
+  </div>
+
+  <div class="reaction">
+    <h2>➕ Síntesis</h2>
+    <p><strong>Nombre:</strong> Formación del óxido de magnesio</p>
+    <p class="equation">2 Mg + O₂ → 2 MgO</p>
+    <p><strong>Descripción:</strong> El magnesio se combina con el oxígeno para formar óxido de magnesio.</p>
+  </div>
+    </section>
+    
+    <section>
+        <h2>Opinión Personal</h2>
+        <p>La química es una ciencia fundamental que estudia la composición, estructura, propiedades y transformaciones de la materia. Su importancia radica en que constituye un puente entre la física y la biología, permitiendo la comprensión de procesos tanto a nivel macroscópico como molecular. Lo que personalmente considero más destacable de la química es su capacidad para explicar fenómenos naturales complejos a través de principios lógicos y cuantificables, como las leyes estequiométricas, la termodinámica y la cinética química. <br><br>Además, la química tiene una aplicación práctica directa en múltiples disciplinas: desde <b>el desarrollo de nuevos materiales y fármacos hasta el diseño de tecnologías sostenibles.</b> Su carácter experimental y analítico estimula el pensamiento crítico, la precisión y la creatividad científica. En resumen, la química no solo nos permite entender el mundo que nos rodea, sino también transformarlo de manera racional y controlada.</p>
+    </section>    
+    
+    <footer>
+        <p>¡Hecho con fines educativos!</p>
+    </footer>
+</body>
+</html>
